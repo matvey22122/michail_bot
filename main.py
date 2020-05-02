@@ -42,7 +42,7 @@ def text(update: Update, context: CallbackContext):
             time = changeInfo(serviceDrive, DOCUMENT_ID_1)
             context.bot.send_message(
                 chat_id=128145862,
-                text=('Прилетела задача. Последний раз вы редактировали список ' + str(time.seconds // 3600) + ' часов ' + str(time.seconds % 3600 // 60) + ' минут назад')
+                text=('Прилетела задача. Последний раз вы редактировали список ' + str(time.days) + ' дней ' + str(time.seconds // 3600) + ' часов ' + str(time.seconds % 3600 // 60) + ' минут назад')
             )#Алине
         else:
             if check(service, DOCUMENT_ID_2, text):
