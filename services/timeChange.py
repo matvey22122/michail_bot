@@ -5,7 +5,7 @@ def changeInfo(service, doc_id):
     items = revisions['items']
     timeNow = datetime.datetime.now()
 
-    timeLast = datetime.datetime.strptime("2020-03-24T20:53:36.620Z", "%Y-%m-%dT%H:%M:%S.%f%z")
+    timeLast = datetime.datetime.strptime("2000-03-24T20:53:36.620Z", "%Y-%m-%dT%H:%M:%S.%f%z")
     timeLast = timeLast.replace(tzinfo=None)
     items.reverse()
     for change in items:
